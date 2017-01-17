@@ -5,6 +5,7 @@
  */
 @import url(https://fonts.googleapis.com/css?family=Montserrat:700);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic);
+@import url(https://fonts.googleapis.com/css?family=Reenie+Beanie);
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
@@ -50,7 +51,9 @@ body {
   letter-spacing: -0.03em;
   text-transform: none;
   text-shadow: none;
-  word-wrap: break-word; }
+  word-wrap: break-word;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0.2em; }
 
 .reveal h1 {
   font-size: 3.77em; }
@@ -67,6 +70,19 @@ body {
 .reveal h1 {
   text-shadow: none; }
 
+.reveal .t1 {
+  color: #e7ad52;
+}
+.reveal .t2 {
+  color: #528be7;
+}
+.reveal .t3 {
+  color: #ae52e7;
+}
+.reveal .t4 {
+  color: #8be752;
+}
+
 /*********************************************
  * OTHER
  *********************************************/
@@ -80,6 +96,15 @@ body {
 .reveal iframe {
   max-width: 95%;
   max-height: 95%; }
+
+.reveal img.thumbnail {
+  max-width: 256px;
+  max-height: 256px;
+  float: left;
+  padding: 0;
+  margin: 7px;
+  border-width: 4px;
+}
 
 .reveal strong,
 .reveal b {
@@ -158,10 +183,18 @@ body {
 
 .reveal pre code {
   display: block;
-  padding: 5px;
   overflow: auto;
   max-height: 400px;
-  word-wrap: normal; }
+  word-wrap: normal;
+  font-size: 0.7em;
+  padding: 0.4em;
+  line-height: 1.1em;
+}
+
+.reveal pre code.chalk {
+  font-family: 'Reenie Beanie', cursive;
+  font-size: 1.6em;
+}
 
 .reveal table {
   margin: auto;

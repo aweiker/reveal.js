@@ -1,0 +1,205 @@
+{
+  "addresses": [
+    {
+      "type": "Home",
+      "streetAddress": "3341 279th Ave NE",
+      "locality": "Redmond",
+      "region": "WA",
+      "postalCode": "98053",
+      "country": "US"
+    },
+    {
+      "type": "Work",
+      "streetAddress": "3341 279th Ave NE",
+      "locality": "Redmond",
+      "region": "WA",
+      "postalCode": "98053",
+      "country": "US"
+    }
+  ],
+  "com:concur:internal:product:Identifiers:1.0": {
+    "cteUsername": "Aaron.Weiker@concur.com",
+    "expenseIds": {
+      "guuid": "8000000070055855647",
+      "entityId": "p00425z4gu"
+    },
+    "travelIds": {
+      "userId": 77294238,
+      "companyId": "f3d4d5e3-44e9-4f04-8d5e-3fd60eaf4e82",
+      "companyInternalId": 1,
+      "setId": 82421427,
+      "ruleClassId": 5800,
+      "travelConfigId": "5288"
+    }
+  },
+  "meta": {
+    "created": "2015-11-25T01:05:00.000",
+    "lastModified": "2017-01-16T22:48:00.000",
+    "principalType": "user",
+    "resourceType": "EnterpriseUser"
+  },
+  "displayName": "Aaron",
+  "name": {
+    "formatted": "Weiker, Aaron Theobald",
+    "familyName": "Weiker",
+    "givenName": "Aaron",
+    "middleName": "Theobald",
+    "honorificPrefix": "",
+    "honorificSuffix": ""
+  },
+  "phoneNumbers": [
+    {
+      "type": "Home",
+      "value": "tel:+1-425-281-5956",
+      "primary": false,
+      "notifications": false,
+      "countryCode": "US",
+      "countryISDCode": "1"
+    },
+    {
+      "type": "Work",
+      "value": "tel:+1-425-590-5420",
+      "primary": false,
+      "notifications": false,
+      "countryCode": "US",
+      "countryISDCode": "1"
+    },
+    {
+      "type": "Cell",
+      "value": "tel:+1-425-281-5956",
+      "primary": true,
+      "notifications": false,
+      "countryCode": "US",
+      "countryISDCode": "1"
+    }
+  ],
+  "com:concur:Employee:1.0": {
+    "companyUUID": "f3d4d5e3-44e9-4f04-8d5e-3fd60eaf4e82",
+    "companyInternalId": 1,
+    "employeeId": "1851928",
+    "jobTitle": "B1282-M - MANAGER DEVELOPMENT",
+    "managerId": "0d93d3bc-d52f-4a17-bcee-d83a270bce87",
+    "orgUnitId": null
+  },
+  "dateOfBirth": "1980-05-05",
+  "schemas": [
+    "com:concur:User:1.0",
+    "com:concur:internal:product:Identifiers:1.0",
+    "com:concur:Employee:1.0",
+    "com:concur:TravelPreferences:1.0",
+    "com:concur:Programs:1.0",
+    "com:concur:Documents:1.0",
+    "com:concur:internal:Roles:1.0"
+  ],
+  "active": true,
+  "id": "3233c241-a96f-4c69-b504-2055b267abc5",
+  "com:concur:TravelPreferences:1.0": {
+    "air": {
+      "seat": {
+        "interrowPosition": "Aisle",
+        "sectionPosition": "Forward"
+      },
+      "meal": "DontCare",
+      "homeAirport": "SEA"
+    },
+    "rail": {
+      "space": "DontCare",
+      "meal": "DontCare",
+      "bedCategory": "DontCare",
+      "fareSpaceComfort": "DontCare",
+      "deck": "DontCare",
+      "coach": "CoachWithTable",
+      "bed": "DontCare",
+      "berth": "DontCare",
+      "noiseComfort": "QuietSpace",
+      "contingency": "DontCare",
+      "seat": "Aisle"
+    },
+    "car": {
+      "smoking": "NonSmoking",
+      "carType": "DontCare",
+      "transmission": "DontCare",
+      "gpsEnabled": false,
+      "skirack": false
+    },
+    "hotel": {
+      "earlyCheckin": false,
+      "remark": null,
+      "pool": false,
+      "roomService": false,
+      "foamPillows": false,
+      "accessForBlind": false,
+      "accessForWheelchair": false,
+      "gym": true,
+      "roomType": "King",
+      "restaurant": false,
+      "rollawayBed": false,
+      "smoking": "NonSmoking",
+      "crib": false
+    }
+  },
+  "com:concur:Programs:1.0": {
+    "car": [],
+    "air": [
+      {
+        "default": false,
+        "pointsNext": null,
+        "expiration": null,
+        "nextStatus": null,
+        "points": null,
+        "segments": null,
+        "vendorName": "Alaska Airlines",
+        "account": "44953101",
+        "statusBenefits": null,
+        "status": null,
+        "segmentsNext": null,
+        "vendorCode": "AS"
+      }
+    ],
+    "rail": [],
+    "hotel": [
+      {
+        "default": false,
+        "pointsNext": null,
+        "expiration": null,
+        "nextStatus": null,
+        "points": null,
+        "segments": null,
+        "vendorName": "Starwood (All)",
+        "account": "45159739973",
+        "statusBenefits": null,
+        "status": null,
+        "segmentsNext": null,
+        "vendorCode": "SW"
+      }
+    ]
+  },
+  "gender": "Male",
+  "emails": [
+    {
+      "value": "aaron.weiker@concur.com",
+      "type": "Business",
+      "notifications": true
+    },
+    {
+      "value": "aaron@weiker.org",
+      "type": "Personal",
+      "notifications": false
+    }
+  ],
+  "com:concur:Documents:1.0": {
+    "visa": [],
+    "passport": []
+  },
+  "com:concur:internal:Roles:1.0": {
+    "com.concur.travel": [
+      "cesuser",
+      "cvpuser",
+      "guestbooking",
+      "meetingcenteruser",
+      "openbookinguser",
+      "traveluser"
+    ]
+  },
+  "userType": "Enterprise"
+}
