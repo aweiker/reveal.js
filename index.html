@@ -45,7 +45,7 @@
           </aside>
         </section>
 
-        <section data-background-image="lib/images/bread/bread.jpg" style="height: 100%; vertical-align: top;">
+        <section data-background-size="100%" data-background-image="lib/images/bread/bread.jpg" style="height: 100%; vertical-align: top;">
           <h2>How to Bake Bread</h2>
           <!--
           <div class="fragment" style="background-color: rgba(0, 0, 0, 0.5); text-align: left; padding: 1em;">
@@ -72,7 +72,7 @@
             bake a loaf of bread. Would you know what to do?
           </aside>
         </section>
-        <section data-background-image="lib/images/bread/fresh-bread.jpg" style="height: 100%; vertical-align: middle;">
+        <section data-background-size="100%" data-background-image="lib/images/bread/fresh-bread.jpg" style="height: 100%; vertical-align: middle;">
           <div class="fragment">Is this <span style="color: red;">recipe</span> sufficient to bake <span style="color: yellow">bread</span>?</div>
           <div class="fragment">What is <span style="font-weight: bold; color: #e7ad52;">missing</span>?</div>
           <aside class="notes">
@@ -135,7 +135,7 @@
             incomplete without specifying how much of something and in what order.
           </aside>
         </section>
-        <section data-background-image="lib/images/bread/salt-flats.jpg" style="height: 100%; vertical-align: top;">
+        <section data-background-size="100%" data-background-image="lib/images/bread/salt-flats.jpg" style="height: 100%; vertical-align: top;">
           <aside class="notes">
             For example, the recipe calls for Salt. How much salt is needed? Too
             little or too much and it will ruin the bread. Compare this to a
@@ -481,12 +481,12 @@ enum CoveringEnum {<span class="fragment">
           <pre>
             <code class="chalk" data-trim data-noescape>
 query cuteAnimals {<span class="fragment">
-  animals {<span class="fragment">
+  animals {</span><span class="fragment">
     name</span><span class="fragment">
     legs</span><span class="fragment">
-    covering</span>
-  }</span>
-}
+    covering</span><span class="fragment">
+  }</span><span class="fragment">
+}</span>
             </code>
           </pre>
           <aside class="notes">
@@ -573,10 +573,114 @@ query cuteAnimals {<span class="fragment">
         </section>
 
 
-        <section data-background-color="white" data-background-iframe="https://web.archive.org/web/19961227005023/http://www2.yahoo.com/"></section>
+        <section data-background-color="white" data-background-iframe="https://web.archive.org/web/20000229203459/http://www.altavista.com/"></section>
         <section data-background-color="white" data-background-iframe="https://web.archive.org/web/20000301065500/http://www.ebay.com/"></section>
 
+        <section style="text-align: left;">
+          <p>
+            The <span class="t2">web browser</span> will request a page from the <span class="t3">web server</span>.
+          Then the <span class="t3">web server</span> will do it's magic to return back <span class="t4">HTML</span>.
+          Then the <span class="t4">HTML</span> will render in the <span class="t2">web browser</span>.
+          Then the <span class="t1">web browser</span> will then download the <span class="t3">images</span> from the <span class="t3">web server</span>.
+          Then the <span class="t1">web browser</span> will render the <span class="t3">images</span> in the <span class="t4">web page</span>.
+          </p>
+          <aside class="notes">
+            Now this is the way that web pages used to work. The important thing
+            to know is that web pages were very dumb and you couldn't do anything
+            without going back to the server.
+          </aside>
+        </section>
 
+        <section>
+          <h1>Web 2.0</h1>
+          <aside class="notes">
+            This was when JavaScript started to take off and we had fancy
+            websites like...
+          </aside>
+        </section>
+
+        <section data-background-color="white" data-background-iframe="https://web.archive.org/web/20100401010936/http://www.yahoo.com/">
+          <aside class="notes">
+            Yes, this webpage is intentionaly broken. I wanted to highlight some
+            of the initial problems that we started seeing now because of this
+            new reliance on Javascript.
+          </aside>
+        </section>
+        <section data-background-color="white" data-background-iframe="https://web.archive.org/web/20110405185940/http://www.cnn.com/">
+          <aside class="notes">
+            But there were some websites that managed to create nice looking
+            websites that actually worked. Also notice that this is when
+            video started to pick up in websites.
+          </aside>
+        </section>
+
+        <section>
+          <h1>SPA</h1>
+          <aside class="notes">
+            Now we start getting to websites where the entire website is run
+            out of a single web page.
+          </aside>
+        </section>
+        <section data-background-size="100%" data-background-image="http://techfleece.com/wp-content/uploads/2011/10/vlcsnap-comfortable.png">
+          <aside class="notes">
+            <p>GMail is a classic example of a single page application.</p>
+            <p>
+              What now happens is that a single HTML file is downloaded, and
+              then an entire encyclopedia of javascript files.
+          </aside>
+        </section>
+        <section data-background-size="100%" data-background-image="lib/images/architecture/encyclopedia.jpg">
+          <aside class="notes">
+            <p>
+              No, for real, there are a bumch of javascript files that are
+              needed as you are now running another application in your web
+              browser.
+            </p>
+          </aside>
+        </section>
+        <section data-background-size="100%" data-background-image="lib/images/architecture/loader.jpg">
+          <aside class="notes">
+            But don't worry, you are also downloading even more amounts of data.
+          </aside>
+        </section>
+
+        <section data-background-size="75%" data-background-image="lib/images/graphql.svg">
+          <aside class="notes">
+            <p>
+              And now we have arrived at parts of the motivation for why GraphQL
+              can be so powerful.
+            </p>
+            <p>
+              It lets us load just the data that we need. AND it can easily
+              be used from a web page or a mobile application.
+            </p>
+          </aside>
+        </section>
+        <section data-background-color="white">
+          <img style="border: none; box-shadow: none;" height="300px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/As_seen_on_TV.svg/220px-As_seen_on_TV.svg.png" />
+          <aside class="notes">
+            <p>
+              But wait... it does more.
+            </p>
+          </aside>
+        </section>
+
+        <section data-background-color="white">
+          <img class="thumbnail" src="lib/images/architecture/redis.png" />
+
+          <aside class="notes">
+            <p>
+              The other design goal of GraphQL, was to be able to retrieve data
+              from multiple locations. <br />
+
+              For example, this could be returning data from a cache and also
+              loading additional data from a web service. <br />
+
+              The important thing to note, is that GraphQL does not data storage.
+              GraphQL is a way of composing data from multiple sources.
+            </p>
+          </aside>
+        </section>
       </div>
     </div>
 
