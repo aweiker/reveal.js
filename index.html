@@ -45,7 +45,7 @@
           </aside>
         </section>
 
-        <section data-background-image="lib/images/bread.jpg" style="height: 100%; vertical-align: top;">
+        <section data-background-image="lib/images/bread/bread.jpg" style="height: 100%; vertical-align: top;">
           <h2>How to Bake Bread</h2>
           <!--
           <div class="fragment" style="background-color: rgba(0, 0, 0, 0.5); text-align: left; padding: 1em;">
@@ -58,35 +58,31 @@
           </div>
           -->
         </section>
-        <section data-background-image="lib/images/flour.jpg" style="height: 100%; vertical-align: top;">
-          <aside class="notes">Flour</aside>
-        </section>
-        <section data-background-image="lib/images/salt-flats.jpg" style="height: 100%; vertical-align: top;">
-          <aside class="notes">Salt</aside>
-        </section>
-        <section data-background-image="lib/images/oil.jpg" style="height: 100%; vertical-align: top;">
-          <aside class="notes">Oil</aside>
-        </section>
-        <section data-background-image="lib/images/yeast.jpg" style="height: 100%; vertical-align: top;">
-          <aside class="notes">Yeast</aside>
-        </section>
-        <section data-background-image="lib/images/knead.jpg" style="height: 100%; vertical-align: top;">
-          <aside class="notes">Knead</aside>
-        </section>
-        <section data-background-image="lib/images/oven.jpg" style="height: 100%; vertical-align: top;">
-          <aside class="notes">Bake</aside>
-        </section>
-        <section data-background-image="lib/images/fresh-bread.jpg" style="height: 100%; vertical-align: top;">
-          <aside class="notes">And voila, our bread is made and looks amazing</aside>
-        </section>
         <section>
-          <div>Is this <span style="color: red;">recipe</span> sufficient to bake <span style="color: yellow">bread</span>?</div>
+          <div>
+            <img src="lib/images/bread/yeast.jpg" class="thumbnail" />
+            <img src="lib/images/bread/flour.jpg" class="thumbnail" />
+            <img src="lib/images/bread/salt.jpg" class="thumbnail" />
+            <img src="lib/images/bread/oil.jpg" class="thumbnail" />
+            <img src="lib/images/bread/knead.jpg" class="thumbnail" />
+            <img src="lib/images/bread/oven.jpg" class="thumbnail" />
+          </div>
+          <aside class="notes">
+            What if I told you that this was everything you needed in order to
+            bake a loaf of bread. Would you know what to do?
+          </aside>
+        </section>
+        <section data-background-image="lib/images/bread/fresh-bread.jpg" style="height: 100%; vertical-align: middle;">
+          <div class="fragment">Is this <span style="color: red;">recipe</span> sufficient to bake <span style="color: yellow">bread</span>?</div>
           <div class="fragment">What is <span style="font-weight: bold; color: #e7ad52;">missing</span>?</div>
+          <aside class="notes">
+            <p>Would your bread turn out like this?</p>
+          </aside>
         </section>
         <section style="font-size: 0.6em;">
           <div style="width: 50%; display: block; float: left; vertical-align: middle;">
             <h3 style="background: none;">Ingredients</h3>
-            <ul style="font-size: 0.6em;">
+            <ul class="fragment" style="font-size: 0.6em;">
               <li>Water - 2 1/4 cups</li>
               <li>Sugar - 3 Tbsp</li>
               <li>Salt - 1 Tbsp</li>
@@ -95,10 +91,10 @@
               <li>Yeast - 1 Package (1/4 oz.)
             </ul>
           </div>
-          <div style="width: 50%; display: block; float: left; vertical-align: middle;">
+          <div class="fragment" style="width: 50%; display: block; float: left; vertical-align: middle;">
             <h3 style="background: none;">Directions</h3>
             <ol style="font-size: 0.6em;">
-              <li style=" padding: 0.4em;">
+              <li class="fragment" style=" padding: 0.4em;">
                 In a large bowl, dissolve <span class="t1">yeast</span> in
                 <span class="t2">warm water</span>. Add the <span class="t3">
                 sugar</span>, <span class="t4">salt</span>, <span class="t1">oil
@@ -106,7 +102,7 @@
                 smooth. Stir in enough remaining <span class="t3">flour</span>,
                 1/2 cup at a time, to form a <span class="t4">soft dough</span>.
               </li>
-              <li style=" padding: 0.4em;">
+              <li class="fragment" style=" padding: 0.4em;">
                 Turn onto a <span class="t4">floured surface</span>;
                 <span class="t3">knead until smooth</span> and <span class="t2">
                 elastic</span>,  about 8-10 <span class="t1">minutes</span>.
@@ -115,14 +111,14 @@
                 <span class="t2">warm place</span> until doubled, about
                 <span class="t4">1-1/2 hours</span>.
               </li>
-              <li style=" padding: 0.4em;">
+              <li class="fragment" style=" padding: 0.4em;">
                 <span class="t2">Punch dough</span> down. Turn onto a
                 <span class="t1">lightly floured surface</span>; divide dough in
                 <span class="t3">half</span>. Shape each into a loaf. Place in
                 <span class="t4">two greased 9x5-in. loaf pans</span>. Cover and
                 let <span class="t3">rise</span> until doubled, about 30-45 minutes.
               </li>
-              <li style=" padding: 0.4em;">
+              <li class="fragment" style=" padding: 0.4em;">
                 <span class="t1">Bake at 375° for 30-35 minutes</span> or until
                 golden brown and bread sounds hollow when tapped. Remove from
                 pans to <span class="t2">wire racks to cool</span>. Yield:
@@ -135,11 +131,11 @@
           <p>But how does this relate to <strong class="t3">GraphQL</strong>?</p>
           <aside class="notes">
             The GraphQL query language is about allowing a client to specify
-            what data is relevant at that point in time. Much like a recipe is
-            incomplete without specifying how much of something.
+            what data is relevant and when. Much like a recipe is
+            incomplete without specifying how much of something and in what order.
           </aside>
         </section>
-        <section data-background-image="lib/images/salt-flats.jpg" style="height: 100%; vertical-align: top;">
+        <section data-background-image="lib/images/bread/salt-flats.jpg" style="height: 100%; vertical-align: top;">
           <aside class="notes">
             For example, the recipe calls for Salt. How much salt is needed? Too
             little or too much and it will ruin the bread. Compare this to a
@@ -149,253 +145,273 @@
         </section>
 
         <section>
-          <h3>REST User Profile</h3>
-          <pre><code data-trim data-noescape>
-            {
-              "addresses": [
-                {
-                  "type": "Home",
-                  "streetAddress": "123 456th Ave NE",
-                  "locality": "Seattle",
-                  "region": "WA",
-                  "postalCode": "98000",
-                  "country": "US"
-                },
-                {
-                  "type": "Work",
-                  "streetAddress": "123 456th Ave NE",
-                  "locality": "Seattle",
-                  "region": "WA",
-                  "postalCode": "98000",
-                  "country": "US"
-                }
-              ],
-              "com:concur:internal:product:Identifiers:1.0": {
-                "cteUsername": "Aaron.XXXXXXX@XXXXXX.com",
-                "expenseIds": {
-                  "guuid": "8000000070055855647",
-                  "entityId": "p00789z1gu"
-                },
-                "travelIds": {
-                  "userId": 77294238,
-                  "companyId": "f3d4d5e3-44e9-4f04-8d5e-3fd60eaf4e82",
-                  "companyInternalId": 1,
-                  "setId": 82421427,
-                  "ruleClassId": 5800,
-                  "travelConfigId": "5288"
-                }
-              },
-              "meta": {
-                "created": "2015-11-25T01:05:00.000",
-                "lastModified": "2017-01-16T22:48:00.000",
-                "principalType": "user",
-                "resourceType": "EnterpriseUser"
-              },
-              "displayName": "Aaron",
-              "name": {
-                "formatted": "Weiker, Aaron",
-                "familyName": "Weiker",
-                "givenName": "Aaron",
-                "honorificPrefix": "",
-                "honorificSuffix": ""
-              },
-              "phoneNumbers": [
-                {
-                  "type": "Home",
-                  "primary": false,
-                  "notifications": false,
-                  "countryCode": "US",
-                  "countryISDCode": "1"
-                },
-                {
-                  "type": "Work",
-                  "primary": false,
-                  "notifications": false,
-                  "countryCode": "US",
-                  "countryISDCode": "1"
-                },
-                {
-                  "type": "Cell",
-                  "primary": true,
-                  "notifications": false,
-                  "countryCode": "US",
-                  "countryISDCode": "1"
-                }
-              ],
-              "com:concur:Employee:1.0": {
-                "companyUUID": "f3d4d5e3-44e9-4f04-8d5e-3fd60eaf4e82",
-                "companyInternalId": 1,
-                "employeeId": "123456789",
-                "jobTitle": "B1282-M - MANAGER DEVELOPMENT",
-                "managerId": "0d93d3bc-d52f-4a17-bcee-d83a270bce87",
-                "orgUnitId": null
-              },
-              "dateOfBirth": "1940-01-01",
-              "schemas": [
-                "com:concur:User:1.0",
-                "com:concur:internal:product:Identifiers:1.0",
-                "com:concur:Employee:1.0",
-                "com:concur:TravelPreferences:1.0",
-                "com:concur:Programs:1.0",
-                "com:concur:Documents:1.0",
-                "com:concur:internal:Roles:1.0"
-              ],
-              "active": true,
-              "id": "3233c241-a96f-4c69-b504-2055b267abc5",
-              "com:concur:TravelPreferences:1.0": {
-                "air": {
-                  "seat": {
-                    "interrowPosition": "Aisle",
-                    "sectionPosition": "Forward"
-                  },
-                  "meal": "DontCare",
-                  "homeAirport": "SEA"
-                },
-                "rail": {
-                  "space": "DontCare",
-                  "meal": "DontCare",
-                  "bedCategory": "DontCare",
-                  "fareSpaceComfort": "DontCare",
-                  "deck": "DontCare",
-                  "coach": "CoachWithTable",
-                  "bed": "DontCare",
-                  "berth": "DontCare",
-                  "noiseComfort": "QuietSpace",
-                  "contingency": "DontCare",
-                  "seat": "Aisle"
-                },
-                "car": {
-                  "smoking": "NonSmoking",
-                  "carType": "DontCare",
-                  "transmission": "DontCare",
-                  "gpsEnabled": false,
-                  "skirack": false
-                },
-                "hotel": {
-                  "earlyCheckin": false,
-                  "remark": null,
-                  "pool": false,
-                  "roomService": false,
-                  "foamPillows": false,
-                  "accessForBlind": false,
-                  "accessForWheelchair": false,
-                  "gym": true,
-                  "roomType": "King",
-                  "restaurant": false,
-                  "rollawayBed": false,
-                  "smoking": "NonSmoking",
-                  "crib": false
-                }
-              },
-              "com:concur:Programs:1.0": {
-                "car": [],
-                "air": [
-                  {
-                    "default": false,
-                    "pointsNext": null,
-                    "expiration": null,
-                    "nextStatus": null,
-                    "points": null,
-                    "segments": null,
-                    "vendorName": "Alaska Airlines",
-                    "account": "123456789",
-                    "statusBenefits": null,
-                    "status": null,
-                    "segmentsNext": null,
-                    "vendorCode": "AS"
-                  }
-                ],
-                "rail": [],
-                "hotel": [
-                  {
-                    "default": false,
-                    "pointsNext": null,
-                    "expiration": null,
-                    "nextStatus": null,
-                    "points": null,
-                    "segments": null,
-                    "vendorName": "Starwood (All)",
-                    "account": "123456789",
-                    "statusBenefits": null,
-                    "status": null,
-                    "segmentsNext": null,
-                    "vendorCode": "SW"
-                  }
-                ]
-              },
-              "gender": "Male",
-              "emails": [
-                {
-                  "value": "aaron.xxxxx@XXXXXXXX.com",
-                  "type": "Business",
-                  "notifications": true
-                },
-                {
-                  "value": "aaron@xxxxxxx.org",
-                  "type": "Personal",
-                  "notifications": false
-                }
-              ],
-              "com:concur:Documents:1.0": {
-                "visa": [],
-                "passport": []
-              },
-              "com:concur:internal:Roles:1.0": {
-                "com.concur.travel": [
-                  "cesuser",
-                  "cvpuser",
-                  "guestbooking",
-                  "meetingcenteruser",
-                  "openbookinguser",
-                  "traveluser"
-                ]
-              },
-              "userType": "Enterprise"
-            }
+          <h3>REST Get my Profile</h3>
+          <pre class="fragment"><code data-trim data-noescape>
+curl -v -H "Authorization: Bearer &lt;access-token&gt;" \
+        -H "concur-correlationid: what-is-graphql-1" \
+        "https://user.concurasp.com/profile-service/v1/me"
           </code></pre>
+
+          <pre class="fragment"><code data-trim data-noescape>
+{
+  "addresses": [
+    {
+      "type": "Home",
+      "streetAddress": "123 456th Ave NE",
+      "locality": "Seattle",
+      "region": "WA",
+      "postalCode": "98000",
+      "country": "US"
+    },
+    {
+      "type": "Work",
+      "streetAddress": "123 456th Ave NE",
+      "locality": "Seattle",
+      "region": "WA",
+      "postalCode": "98000",
+      "country": "US"
+    }
+  ],
+  "com:concur:internal:product:Identifiers:1.0": {
+    "cteUsername": "Aaron.XXXXXXX@XXXXXX.com",
+    "expenseIds": {
+      "guuid": "8000000070055855647",
+      "entityId": "p00789z1gu"
+    },
+    "travelIds": {
+      "userId": 77294238,
+      "companyId": "f3d4d5e3-44e9-4f04-8d5e-3fd60eaf4e82",
+      "companyInternalId": 1,
+      "setId": 82421427,
+      "ruleClassId": 5800,
+      "travelConfigId": "5288"
+    }
+  },
+  "meta": {
+    "created": "2015-11-25T01:05:00.000",
+    "lastModified": "2017-01-16T22:48:00.000",
+    "principalType": "user",
+    "resourceType": "EnterpriseUser"
+  },
+  "displayName": "Aaron",
+  "name": {
+    "formatted": "Weiker, Aaron",
+    "familyName": "Weiker",
+    "givenName": "Aaron",
+    "honorificPrefix": "",
+    "honorificSuffix": ""
+  },
+  "phoneNumbers": [
+    {
+      "type": "Home",
+      "primary": false,
+      "notifications": false,
+      "countryCode": "US",
+      "countryISDCode": "1"
+    },
+    {
+      "type": "Work",
+      "primary": false,
+      "notifications": false,
+      "countryCode": "US",
+      "countryISDCode": "1"
+    },
+    {
+      "type": "Cell",
+      "primary": true,
+      "notifications": false,
+      "countryCode": "US",
+      "countryISDCode": "1"
+    }
+  ],
+  "com:concur:Employee:1.0": {
+    "companyUUID": "f3d4d5e3-44e9-4f04-8d5e-3fd60eaf4e82",
+    "companyInternalId": 1,
+    "employeeId": "123456789",
+    "jobTitle": "B1282-M - MANAGER DEVELOPMENT",
+    "managerId": "0d93d3bc-d52f-4a17-bcee-d83a270bce87",
+    "orgUnitId": null
+  },
+  "dateOfBirth": "1940-01-01",
+  "schemas": [
+    "com:concur:User:1.0",
+    "com:concur:internal:product:Identifiers:1.0",
+    "com:concur:Employee:1.0",
+    "com:concur:TravelPreferences:1.0",
+    "com:concur:Programs:1.0",
+    "com:concur:Documents:1.0",
+    "com:concur:internal:Roles:1.0"
+  ],
+  "active": true,
+  "id": "3233c241-a96f-4c69-b504-2055b267abc5",
+  "com:concur:TravelPreferences:1.0": {
+    "air": {
+      "seat": {
+        "interrowPosition": "Aisle",
+        "sectionPosition": "Forward"
+      },
+      "meal": "DontCare",
+      "homeAirport": "SEA"
+    },
+    "rail": {
+      "space": "DontCare",
+      "meal": "DontCare",
+      "bedCategory": "DontCare",
+      "fareSpaceComfort": "DontCare",
+      "deck": "DontCare",
+      "coach": "CoachWithTable",
+      "bed": "DontCare",
+      "berth": "DontCare",
+      "noiseComfort": "QuietSpace",
+      "contingency": "DontCare",
+      "seat": "Aisle"
+    },
+    "car": {
+      "smoking": "NonSmoking",
+      "carType": "DontCare",
+      "transmission": "DontCare",
+      "gpsEnabled": false,
+      "skirack": false
+    },
+    "hotel": {
+      "earlyCheckin": false,
+      "remark": null,
+      "pool": false,
+      "roomService": false,
+      "foamPillows": false,
+      "accessForBlind": false,
+      "accessForWheelchair": false,
+      "gym": true,
+      "roomType": "King",
+      "restaurant": false,
+      "rollawayBed": false,
+      "smoking": "NonSmoking",
+      "crib": false
+    }
+  },
+  "com:concur:Programs:1.0": {
+    "car": [],
+    "air": [
+      {
+        "default": false,
+        "pointsNext": null,
+        "expiration": null,
+        "nextStatus": null,
+        "points": null,
+        "segments": null,
+        "vendorName": "Alaska Airlines",
+        "account": "123456789",
+        "statusBenefits": null,
+        "status": null,
+        "segmentsNext": null,
+        "vendorCode": "AS"
+      }
+    ],
+    "rail": [],
+    "hotel": [
+      {
+        "default": false,
+        "pointsNext": null,
+        "expiration": null,
+        "nextStatus": null,
+        "points": null,
+        "segments": null,
+        "vendorName": "Starwood (All)",
+        "account": "123456789",
+        "statusBenefits": null,
+        "status": null,
+        "segmentsNext": null,
+        "vendorCode": "SW"
+      }
+    ]
+  },
+  "gender": "Male",
+  "emails": [
+    {
+      "value": "aaron.xxxxx@XXXXXXXX.com",
+      "type": "Business",
+      "notifications": true
+    },
+    {
+      "value": "aaron@xxxxxxx.org",
+      "type": "Personal",
+      "notifications": false
+    }
+  ],
+  "com:concur:Documents:1.0": {
+    "visa": [],
+    "passport": []
+  },
+  "com:concur:internal:Roles:1.0": {
+    "com.concur.travel": [
+      "cesuser",
+      "cvpuser",
+      "guestbooking",
+      "meetingcenteruser",
+      "openbookinguser",
+      "traveluser"
+    ]
+  },
+  "userType": "Enterprise"
+}
+          </code></pre>
+          <aside class="notes">
+            This is an exmaple taken from the brand new Core Services Profile Service.
+
+            <p>
+              Notice all of the data here. Do we need all of this data?
+            </p>
+          </aside>
         </section>
 
         <section>
-          <h3>GraphQL User Profile</h3>
-          <pre><code data-trim data-noescape>
-            query profile {
-              user {
-                profile {
-                  personal {
-                    name {
-                      first
-                      last
-                    }
-                  }
-                  company {
-                    name
-                  }
-                }
-              }
-            }
-          </code></pre>
-        </section>
-        <section>
-          <h3>GraphQL User Profile</h3>
-          <pre><code data-trim data-noescape>
-            {
-              "data": {
-                "user": {
-                  "profile": {
-                    "personal": {
-                      "name": {
-                        "last": "Weiker",
-                        "first": "Aaron"
-                      }
-                    },
-                    "company": {
-                      "name": "Concur Technology"
-                    }
-                  }
-                }
-              }
-            }
-          </code></pre>
+          <h3>GraphQL Profile</h3>
+          <div class="fragment" style="width: 40%; display: block; float: left; vertical-align: middle;">
+            <pre><code data-trim data-noescape>
+
+query profile {
+  user {
+    profile {
+      personal {
+        name {
+          first
+          last
+        }
+      }
+      company {
+        name
+      }
+    }
+  }
+}
+            </code></pre>
+            <aside class="notes">
+              Notice how we only need to ask for the data that we want back. <br />
+              Take a look at the query and data.. notice the similarity of the shape? <br />
+              This symetry of data was by design.
+            </aside>
+          </div>
+          <div class="fragment" style="width: 55%; display: block; float: left; vertical-align: middle;">
+            <pre><code data-trim data-noescape>
+{
+  "data": {
+    "user": {
+      "profile": {
+        "personal": {
+          "name": {
+            "last": "Weiker",
+            "first": "Aaron"
+          }
+        },
+        "company": {
+          "name": "Concur Technology"
+        }
+      }
+    }
+  }
+}
+            </code></pre>
+          </div>
         </section>
         <section>
           <div>
@@ -413,80 +429,154 @@
             <img src="lib/images/animals/quokka.jpg" class="thumbnail" />
             <img src="lib/images/animals/snail.jpg" class="thumbnail" />
           </div>
+          <aside class="notes">
+            <h3>Practice</h3>
+            <p>
+              Here we have a photo gallery and our job right now is to create a
+              GraphQL Schema to describe the various animals.
+            </p>
+          </aside>
         </section>
 
-        <section style="width: 100%;">
-          <pre>
-            <code class="chalk" data-trim data-noescape>
-            type animal {
-              name: String
-              legs: Integer
-              covering: CoveringEnum
-            }
-          </code></pre>
-          <pre class="fragment">
-            <code class="chalk" data-trim data-noescape>
-          enum CoveringEnum {
-            HAIR
-            FEATHERS
-            FUR
-            SCALES
-          }
-          </code></pre>
+        <section style="width: 100%; height: 100%;">
+          <h3>Practice</h3>
+          <div class="fragment" style="width: 45%; height: 100%; display: block; float: left; vertical-align: middle;">
+            <pre><code class="chalk" data-trim data-noescape>
+type animal {<span class="fragment">
+  name: String</span><span class="fragment">
+  legs: Integer</span><span class="fragment">
+  covering: CoveringEnum</span><span class="fragment">
+}</span>
+            </code></pre>
+          </div>
+          <div class="fragment" style="width: 45%; height: 100% display: block; float: left; vertical-align: middle;">
+            <pre><code class="chalk" data-trim data-noescape>
+enum CoveringEnum {<span class="fragment">
+  HAIR</span><span class="fragment">
+  FEATHERS</span><span class="fragment">
+  FUR</span><span class="fragment">
+  SCALES</span><span class="fragment">
+}</span>
+            </code></pre>
+          </div>
+          <aside class="notes">
+            <ol>
+              <li>
+                First we are going to start of by describing the animals. The
+                first thing we will do is give each animal a <strong>name</strong>.
+                Next the number of <strong>legs</strong>, and then identify what
+                type of <strong>covering</strong> they have.
+              </li>
+              <li>
+                An Enumeration is just a restricted set of values that describe
+                a field. In this case we have the following different types of
+                covering: Hair, Features, Fur, and Scales. <br />
+                In case you're wondering, it's a GraphQL convention to use all
+                upper case for Enums.
+              </li>
+            </ol>
+          </aside>
         </section>
-        <section style="display: block; width: 100%; height: 100%; vertical-align: middle;">
+        <section style="display: block; width: 100%; height: 100%; vertical-align: middle; align: center;">
           <pre>
             <code class="chalk" data-trim data-noescape>
-            query cuteAnimals {<span class="fragment">
-              animals {<span class="fragment">
-                name</span><span class="fragment">
-                legs</span><span class="fragment">
-                covering</span>
-              }</span>
-            }
+query cuteAnimals {<span class="fragment">
+  animals {<span class="fragment">
+    name</span><span class="fragment">
+    legs</span><span class="fragment">
+    covering</span>
+  }</span>
+}
             </code>
           </pre>
+          <aside class="notes">
+            Having just created the types that describe our cute animals, let's
+            write a query to retrieve this information.
+          </aside>
         </section>
         <section>
-          <table>
-            <thead>
-              <tr>
-                <th>Name</th>
-                <th>Legs</th>
-                <th>Covering</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Caribou</td><td>4</td><td>FUR</td>
-              </tr>
-              <tr>
-                <td>Dog</td><td>4</td><td>FUR</td>
-              </tr>
-              <tr>
-                <td>Frog</td><td>4</td><td>SCALES</td>
-              </tr>
-              <tr>
-                <td>Iguana</td><td>4</td><td>SCALES</td>
-              </tr>
-              <tr>
-                <td>Cat</td><td>4</td><td>FUR</td>
-              </tr>
-              <tr>
-                <td>Lama</td><td>4</td><td>FUR</td>
-              </tr>
-              <tr>
-                <td>Pelican</td><td>2</td><td>FEATHERS</td>
-              </tr>
-              <tr>
-                <td>Quokka</td><td>4</td><td>FUR</td>
-              </tr>
-              <tr>
-                <td>Snail</td><td></td><td></td>
-              </tr>
-            </tbody>
-          </table>
+          <pre><code data-trim data-noescape>
+{
+  "data": {
+    "animals": [
+      { "name": "Caribou", "legs": 4,   "covering": "FUR"      },
+      { "name": "Dog",     "legs": 4,   "covering": "FUR"      },
+      { "name": "Frog",    "legs": 4,   "covering": "SCALES"   },
+      { "name": "Cat",     "legs": 4,   "covering": "FUR"      },
+      { "name": "Lama",    "legs": 4,   "covering": "FUR"      },
+      { "name": "Pelican", "legs": 2,   "covering": "FEATHERS" },
+      { "name": "Quokka",  "legs": 4,   "covering": "FUR"      },
+      { "name": "Snail",   "legs": nil, "covering": nil        }
+    ]
+  }
+}
+          </code></pre>
         </section>
+
+        <section data-background-color="white" data-background-size="100%" data-background-image="lib/images/blue-ribbon.jpg">
+          <h3>Congratulations</h3>
+
+          <aside class="notes">
+            <p>Congratulations...</p>
+            <p>
+              So far we have learned the basics of create a GraphQL Schema and
+              writing a query. Before we dig any deeper how about we back up
+              and explain where GraphQL came from and what this means to us.
+            </p>
+          </aside>
+        </section>
+
+        <section data-background-color="black">
+          <img src="lib/images/fb.png" style="border: none; height: 144px; width: 144px;" />
+          <div class="fragment">
+            <img src="lib/images/graphql.svg" style="border: none; height: 144px; width: 144px;" />
+            <img src="lib/images/react.svg" style="border: none; height: 144px; width: 144px;" />
+            <img src="lib/images/relay.svg" style="border: none; height: 144px; width: 144px;" />
+          </div>
+
+          <aside class="notes">
+            <p>
+            Facebook created GraphQL about 5 years ago. Facebook had set out
+            with the goal of creating a set of common tooling that could be
+            used across both Native Mobile applications and Desktop web browsers.
+            </p>
+            <p>The result ended up being the creation of React, GraphQL, and Relay.</p>
+            <p>
+              <ul>
+                <li>GraphQL as we have learned is a way of exposing data and behavior.</li>
+                <li>React is a tool for building reusable components</li>
+                <li>Relay is a library that connects React and GraphQL</li>
+              </ul>
+            </p>
+          </aside>
+        </section>
+
+
+        <section data-background-size="100%" data-background-image="lib/images/architecture/puzzles.jpg">
+          <aside class="notes">
+            Now that we know a little more about where GraphQL came from, let's
+            learn about how it fits in with the rest of our websites.
+          </aside>
+        </section>
+
+        <section data-background-size="100%" data-background-image="lib/images/architecture/laptop.jpg">
+          <aside class="notes">
+            This is how most of us look when we are trying to book a flight,
+            or win our next auction on ebay.
+          </aside>
+        </section>
+
+        <section data-background-size="100%" data-background-image="https://c.stocksy.com/a/iRb100/z0/382274.jpg">
+          <aside class="notes">
+            Fortunately for us, we can also use GraphQL from our Phone.
+          </aside>
+        </section>
+
+
+        <section data-background-color="white" data-background-iframe="https://web.archive.org/web/19961227005023/http://www2.yahoo.com/"></section>
+        <section data-background-color="white" data-background-iframe="https://web.archive.org/web/20000301065500/http://www.ebay.com/"></section>
+
+
       </div>
     </div>
 
