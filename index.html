@@ -43,12 +43,14 @@
           <p>
             <a href="https://aweiker.github.io/what-is-graphql/" target="_new">
               Online Presentation
-            </a>
+            </a> <br />
+            <small>https://aweiker.github.io/what-is-graphql/</small>
           </p>
           <p>
             <a href="https://github.com/aweiker/what-is-graphql/" target="_new">
               Presentation Source Code
-            </a>
+            </a> <br />
+            <small>https://github.com/aweiker/what-is-graphql/</small>
           </p>
           <aside class="notes">
             But before dig in, we first need to understand why any of this is important.
@@ -57,16 +59,6 @@
 
         <section data-background-size="100%" data-background-image="lib/images/bread/bread.jpg" style="height: 100%; vertical-align: top;">
           <h2>How to Bake Bread</h2>
-          <!--
-          <div class="fragment" style="background-color: rgba(0, 0, 0, 0.5); text-align: left; padding: 1em;">
-            <ul>
-              <li>Flour</li>
-              <li>Salt</li>
-              <li>Oil</li>
-              <li>Yeast</li>
-            </ul>
-          </div>
-          -->
         </section>
         <section>
           <div>
@@ -83,7 +75,7 @@
           </aside>
         </section>
         <section data-background-size="100%" data-background-image="lib/images/bread/fresh-bread.jpg" style="height: 100%; vertical-align: middle;">
-          <div class="fragment">Is this <span style="color: red;">recipe</span> sufficient to bake <span style="color: yellow">bread</span>?</div>
+          <div class="fragment">Is this <span style="color: red; font-style: italic">recipe</span> sufficient to bake <span style="color: yellow">bread</span>?</div>
           <div class="fragment">What is <span style="font-weight: bold; color: #e7ad52;">missing</span>?</div>
           <aside class="notes">
             <p>Would your bread turn out like this?</p>
@@ -488,8 +480,9 @@ enum CoveringEnum {<span class="fragment">
           </aside>
         </section>
         <section style="display: block; width: 100%; height: 100%; vertical-align: middle; align: center;">
+          <h3>Practice Query</h3>
           <pre>
-            <code class="chalk" data-trim data-noescape>
+            <code class="chalk fragment" data-trim data-noescape>
 query cuteAnimals {<span class="fragment">
   animals {</span><span class="fragment">
     name</span><span class="fragment">
@@ -523,6 +516,42 @@ query cuteAnimals {<span class="fragment">
           </code></pre>
         </section>
 
+        <section style="display: block; width: 100%; height: 100%; vertical-align: middle; align: center;">
+          <h3>Practice Mutation</h3>
+          <pre>
+            <code class="chalk fragment" data-trim data-noescape>
+mutation adoptFuzzball {<span class="fragment">
+  animal {</span><span class="fragment">
+    adopt</span><span class="fragment">(name: "Quokka"</span><span class="fragment">, parent: "Aaron") {</span><span class="fragment">
+      name</span><span class="fragment">
+      parent</span><span class="fragment">
+      happinessLevel</span><span class="fragment">
+    }</span><span class="fragment">
+  }</span><span class="fragment">
+}</span>
+            </code>
+          </pre>
+          <aside class="notes">
+            Having just created the types that describe our cute animals, let's
+            write a query to retrieve this information.
+          </aside>
+        </section>
+        <section>
+          <pre><code data-trim data-noescape>
+{
+  "data": {
+    "animal": {
+      "adopt": {
+        "name"           : "Quokka",
+        "parent"         : "Aaron",
+        "happinessLevel" : 10
+      }
+    }
+  }
+}
+          </code></pre>
+        </section>
+
         <section data-background-color="white" data-background-size="100%" data-background-image="lib/images/blue-ribbon.jpg">
           <h3>Congratulations</h3>
 
@@ -535,32 +564,6 @@ query cuteAnimals {<span class="fragment">
             </p>
           </aside>
         </section>
-
-        <section data-background-color="black">
-          <img src="lib/images/fb.png" style="border: none; height: 144px; width: 144px;" />
-          <div class="fragment">
-            <img src="lib/images/graphql.svg" style="border: none; height: 144px; width: 144px;" />
-            <img src="lib/images/react.svg" style="border: none; height: 144px; width: 144px;" />
-            <img src="lib/images/relay.svg" style="border: none; height: 144px; width: 144px;" />
-          </div>
-
-          <aside class="notes">
-            <p>
-            Facebook created GraphQL about 5 years ago. Facebook had set out
-            with the goal of creating a set of common tooling that could be
-            used across both Native Mobile applications and Desktop web browsers.
-            </p>
-            <p>The result ended up being the creation of React, GraphQL, and Relay.</p>
-            <p>
-              <ul>
-                <li>GraphQL as we have learned is a way of exposing data and behavior.</li>
-                <li>React is a tool for building reusable components</li>
-                <li>Relay is a library that connects React and GraphQL</li>
-              </ul>
-            </p>
-          </aside>
-        </section>
-
 
         <section data-background-size="100%" data-background-image="lib/images/architecture/puzzles.jpg">
           <aside class="notes">
@@ -583,8 +586,8 @@ query cuteAnimals {<span class="fragment">
         </section>
 
 
-        <section data-background-color="white" data-background-iframe="https://web.archive.org/web/20000229203459/http://www.altavista.com/"></section>
-        <section data-background-color="white" data-background-iframe="https://web.archive.org/web/20000301065500/http://www.ebay.com/"></section>
+        <section data-background-size="100%" data-background-color="white" data-background-image="lib/images/screenshot/altavista.png"></section>
+        <section data-background-size="100%" data-background-color="white" data-background-image="lib/images/screenshot/ebay.png"></section>
 
         <section style="text-align: left;">
           <p>
@@ -609,14 +612,14 @@ query cuteAnimals {<span class="fragment">
           </aside>
         </section>
 
-        <section data-background-color="white" data-background-iframe="https://web.archive.org/web/20100401010936/http://www.yahoo.com/">
+        <section data-background-size="100%" data-background-color="white" data-background-image="lib/images/screenshot/yahoo.png">
           <aside class="notes">
             Yes, this webpage is intentionaly broken. I wanted to highlight some
             of the initial problems that we started seeing now because of this
             new reliance on Javascript.
           </aside>
         </section>
-        <section data-background-color="white" data-background-iframe="https://web.archive.org/web/20110405185940/http://www.cnn.com/">
+        <section data-background-size="100%" data-background-color="white" data-background-image="lib/images/screenshot/cnn.png">
           <aside class="notes">
             But there were some websites that managed to create nice looking
             websites that actually worked. Also notice that this is when
@@ -631,7 +634,7 @@ query cuteAnimals {<span class="fragment">
             out of a single web page.
           </aside>
         </section>
-        <section data-background-size="100%" data-background-image="http://techfleece.com/wp-content/uploads/2011/10/vlcsnap-comfortable.png">
+        <section data-background-size="100%" data-background-image="https://www.isostech.com/wp-content/uploads/2014/11/sad.png">
           <aside class="notes">
             <p>GMail is a classic example of a single page application.</p>
             <p>
@@ -675,22 +678,82 @@ query cuteAnimals {<span class="fragment">
           </aside>
         </section>
 
-        <section data-background-color="white">
-          <img class="thumbnail" src="lib/images/architecture/redis.png" />
+      <section data-background-color="black">
+        <img src="lib/images/fb.png" style="border: none; height: 144px; width: 144px;" />
+        <div class="fragment">
+          <img src="lib/images/graphql.svg" style="border: none; height: 144px; width: 144px;" />
+          <img src="lib/images/react.svg" style="border: none; height: 144px; width: 144px;" />
+          <img src="lib/images/relay.svg" style="border: none; height: 144px; width: 144px;" />
+        </div>
 
-          <aside class="notes">
-            <p>
-              The other design goal of GraphQL, was to be able to retrieve data
-              from multiple locations. <br />
+        <aside class="notes">
+          <p>
+          Facebook created GraphQL about 5 years ago. Facebook had set out
+          with the goal of creating a set of common tooling that could be
+          used across both Native Mobile applications and Desktop web browsers.
+          </p>
+          <p>The result ended up being the creation of React, GraphQL, and Relay.</p>
+          <p>
+            <ul>
+              <li>GraphQL as we have learned is a way of exposing data and behavior.</li>
+              <li>React is a tool for building reusable components</li>
+              <li>Relay is a library that connects React and GraphQL</li>
+            </ul>
+          </p>
+        </aside>
+      </section>
 
-              For example, this could be returning data from a cache and also
-              loading additional data from a web service. <br />
+      <section data-background-size="100%" data-background-image="lib/images/quesetion.jpg">
+        <aside class="notes">
+          Why are we using GraphQL at Concur? Are we merely following the next
+          Internet fad? Are we trying to be like Facebook?
+        </aside>
+      </section>
 
-              The important thing to note, is that GraphQL does not data storage.
-              GraphQL is a way of composing data from multiple sources.
-            </p>
-          </aside>
-        </section>
+      <section>
+        <h3>Versioning?</h3>
+        <aside class="notes">
+          GraphQL allows us to focus on creating long lived and durable contracts
+          with clients. What this means is that it is easy to evolve a schema
+          without needing to version anything.
+
+          <p>
+            <strong>Question: How many types do you think Facebook ahve?</strong><br />
+            Thousands
+            <strong>Question: How many unique schemas does Facebook have?</strong></br>
+            3. Facebook, Instagram, Oculus Rift
+          </p>
+        </aside>
+      </section>
+      <section>
+        <h3>Only what you need</h3>
+        <aside class="notes">
+          Allow the client to only request the data it cares about.
+        </aside>
+      </section>
+      <section>
+        <h3>Batching</h3>
+        <aside class="notes">
+          Client makes a single request and then the server can batch up
+          multiple requests.
+        </aside>
+      </section>
+      <section>
+        <h3>NOT REST</h3>
+        <aside class="notes">
+          <strong>What is REST?</strong> How many different definitions have you
+          heard? GraphQL is a protocol specification that allows us to stop
+          arguing on the small details.
+        </aside>
+      </section>
+
+      <section>
+        <h3>Q &amp; A</h3>
+        <ul>
+          <li class="fragment">Do I need to build my own GraphQL server?</li>
+          <li class="fragment">Who's using GraphQL at Concur right now?</li>
+        </ul>
+      </section>
       </div>
     </div>
 
